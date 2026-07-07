@@ -28,6 +28,25 @@ A robust ASP.NET Core Web API built to manage user records efficiently. This pro
 
 ---
 
+## 📁 Project Structure
+
+```text
+UserManagementAPI/
+├── Controllers/
+│   └── UsersController.cs          # API Endpoints (CRUD) & Input Validation
+├── Middlewares/
+│   ├── AuthenticationMiddleware.cs # Validates Bearer token & secures endpoints
+│   ├── ErrorHandlingMiddleware.cs  # Global try-catch for 500 Server Errors
+│   └── LoggingMiddleware.cs        # Audit trail for HTTP requests
+├── Models/
+│   └── User.cs                     # User data model
+├── CopilotDocumentation.md         # Detailed breakdown of AI assistance
+├── Program.cs                      # App entry point & configuration
+└── README.md                       # Documentation
+```
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Prerequisites
