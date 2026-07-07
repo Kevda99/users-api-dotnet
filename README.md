@@ -10,7 +10,7 @@ A robust ASP.NET Core Web API built to manage user records efficiently. This pro
 > *If you are grading this project, here is exactly where to find the rubric requirements:*
 > - **CRUD Endpoints:** Check `Controllers/UsersController.cs`.
 > - **Validation:** Check the `IsValidUser` method inside the controller (`400 BadRequest`).
-> - **Middleware:** Check `Program.cs` for Error-Handling, Authentication, and Logging.
+> - **Middleware:** Check the `Middlewares/` folder for `ErrorHandlingMiddleware.cs`, `AuthenticationMiddleware.cs`, and `LoggingMiddleware.cs`.
 > - **AI Usage (Copilot):** See `CopilotDocumentation.md` for details on how AI was used for debugging and scaffolding.
 
 ---

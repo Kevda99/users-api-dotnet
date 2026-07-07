@@ -43,6 +43,8 @@ In the second phase of development, the AI was instrumental in identifying and r
 
 In the third and final phase of development, the AI assisted in securing, auditing, and improving the resilience of the API by implementing and configuring custom middleware.
 
+*Update:* To adhere to the Single Responsibility Principle and maintain a clean architecture, the inline middlewares were refactored into dedicated classes within the `Middlewares/` folder.
+
 1. **Error-Handling Middleware:**
    - Positioned **first** in the pipeline.
    - It acts as a global safety net by wrapping subsequent requests in a `try-catch` block, ensuring that any unhandled exceptions are caught. It standardizes the response to a `500 Internal Server Error` with a consistent JSON payload (`{ "error": "Internal server error." }`).
